@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+@await Component.InvokeAsync("_HeaderComponentPartial")
+
+<body class="inner_page email_page">
+    <div class="full_container">
+        <div class="inner_container">
+            <!-- Sidebar  -->
+            @await Component.InvokeAsync("_SidebarComponentPartial")
+            <!-- end sidebar -->
+            <!-- right content -->
+            <div id="content">
+                <!-- topbar -->
+                @await Component.InvokeAsync("_NavbarComponentPartial")
+                <!-- end topbar -->
+                <!-- dashboard inner -->
+                @RenderBody()
+                <!-- end dashboard inner -->
+            </div>
+        </div>
+        <!-- model popup -->
+    </div>
+    @await Component.InvokeAsync("_ScriptComponentPartial")
+
+</body>
+</html>
