@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace UserMessageApp.Controllers
 {
+    //Deneme yazısıdır.
     public class DraftController : Controller
     {
         DraftManager draftManager = new DraftManager(new EfDraftDal());
